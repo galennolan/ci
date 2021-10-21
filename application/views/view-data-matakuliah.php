@@ -7,6 +7,8 @@
     <title>Tampil Data Matakuliah</title>
 </head>
 <body>
+<p><?php echo anchor('form', 'Try it again!'); ?></p>
+
     <center>
         <table>
             <tr>
@@ -28,7 +30,7 @@
                 <td><?=$sks; ?></td>
             </tr> 
             <tr>
-                <td colspan="3" align="center"><a href="<?=base_url('matakuliah');?>">Kembali </a></td>
+                <td colspan="3" align="center"><a href="<?=base_url('matakuliahs');?>">Kembali </a></td>
             </tr>           
         </table>
     </center>
