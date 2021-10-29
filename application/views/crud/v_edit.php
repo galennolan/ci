@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</title>
+	<title>Create Read Update Delete Form buku-test</title>
 </head>
 <body>
 	<center>

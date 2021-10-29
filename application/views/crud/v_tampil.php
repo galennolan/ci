@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</title>
+	<title>Create Read Update Delete Form buku-test</title>
 </head>
 <body>
-	<center><h1>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</h1></center>
+	<center><h1>Create Read Update Delete Form buku-test</h1></center>
 	<center><?php echo anchor('crud/tambah','Tambah Data'); ?></center>
 	<table style="margin:20px auto;" border="1">
 		<tr>
