@@ -18,8 +18,8 @@ class M_buku extends CI_Model{
 		return $this->db->get_where($table,$where);
 	}
 
-	function update_buku	($where,$data,$table){		
+	function update_buku($where,$data,$table){		
 		 $this->db->where($where);
-		 $this->db->where($table,$data);
+		 $this->db->update($table,$data);
 	}
 }

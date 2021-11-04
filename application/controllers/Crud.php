@@ -10,7 +10,7 @@ class Crud extends CI_Controller{
 
 	}
 
-	function index(){
+	public function index(){
 		$data['buku_test'] = $this->m_buku->tampil_data()->result();
 		$this->load->view('crud/v_tampil',$data);
 	}
@@ -21,13 +21,13 @@ class Crud extends CI_Controller{
 
     function tambah_aksi(){
 		$Judulbuku = $this->input->post('Judulbuku');
-		$penulisbuku = $this->input->post('penulisbuku');
-		$halamanbuku = $this->input->post('halamanbuku');
+		$penulisbuku = $this->input->post('Penulisbuku');
+		$halamanbuku = $this->input->post('Halamanbuku');
  
 		$data = array(
 			'Judulbuku' => $Judulbuku,
 			'Penulisbuku' => $penulisbuku,
-			'halamanbuku' => $halamanbuku
+			'Halamanbuku' => $halamanbuku
 			);
 		$this->m_buku->input_buku($data,'buku_test');
 		redirect('crud/index');
@@ -41,29 +41,27 @@ class Crud extends CI_Controller{
 
     function edit($id){
         $where = array('id' => $id);
-        $data['user'] = $this->m_buku->edit_buku($where,'buku_test')->result();
+        $data['buku_test'] = $this->m_buku->edit_buku($where,'buku_test')->result();
         $this->load->view('crud/v_edit',$data);
     }
  
-    function update(){
-        $id = $this->input->post('id');
-        $Judulbuku = $this->input->post('Judulbuku');
-        $Penulisbuku = $this->input->post('Penulisbuku');
-        $Halamanbuku = $this->input->post('Halamanbuku');
-    
-        $data = array(
-            'Judulbuku' => $Judulbuku,
-            'Penulisbuku' => $Penulisbuku,
-            'Halamanbuku' => $Halamanbuku
-        );
-    
-        $where = array(
-            'id' => $id
-        );
-    
-        $this->m_buku->update_buku($where,$data,'buku_test');
-        redirect('crud/index');
-    }
-    
+	 function update (){
+		$id = $this->input->post('id');
+		$Judulbuku = $this->input->post('Judulbuku');
+		$Penulisbuku = $this->input->post('Penulisbuku');
+		$Halamanbuku = $this->input->post('Halamanbuku');
+
+		$data = array(
+			'Judulbuku' => $Judulbuku,
+			'Penulisbuku' => $Penulisbuku,
+			'Halamanbuku' => $Halamanbuku
+			);
+		$where = array(
+			'id' => $id
+		);
+	
+		$this->m_buku->update_buku($where,$data,'buku_test');
+		redirect('crud/index');
+	} 
 
 }

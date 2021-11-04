@@ -8,7 +8,7 @@
 		<h1> CRUD Form</h1>
 		<h3>Edit Buku</h3>
 	</center>
-	<?php foreach($user as $u){ ?>
+	<?php foreach($buku_test as $u){ ?>
 	<form action="<?php echo base_url(). 'crud/update'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>

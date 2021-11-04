@@ -16,11 +16,11 @@
 			</tr>
 			<tr>
 				<td>Penulis Buku</td>
-				<td><input type="text" name="penulisbuku"></td>
+				<td><input type="text" name="Penulisbuku"></td>
 			</tr>
 			<tr>
 				<td>Halaman Buku</td>
-				<td><input type="text" name="halamanbuku"></td>
+				<td><input type="text" name="Halamanbuku"></td>
 			</tr>
 			<tr>
 				<td></td>
